@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8329768C2B7B940D009F4E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329768B2B7B940D009F4E0A /* AppDelegate.swift */; };
-		8329768E2B7B940D009F4E0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329768D2B7B940D009F4E0A /* SceneDelegate.swift */; };
-		832976902B7B940D009F4E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329768F2B7B940D009F4E0A /* ViewController.swift */; };
-		832976952B7B940E009F4E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832976942B7B940E009F4E0A /* Assets.xcassets */; };
-		832976982B7B940E009F4E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832976962B7B940E009F4E0A /* LaunchScreen.storyboard */; };
+		8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */; };
+		8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */; };
+		8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1852B7BA3AC009FB214 /* ViewController.swift */; };
+		8FA3D18B2B7BA3AE009FB214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3D18A2B7BA3AE009FB214 /* Assets.xcassets */; };
+		8FA3D18E2B7BA3AE009FB214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FA3D18C2B7BA3AE009FB214 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		832976882B7B940D009F4E0A /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8329768B2B7B940D009F4E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8329768D2B7B940D009F4E0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8329768F2B7B940D009F4E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		832976942B7B940E009F4E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		832976972B7B940E009F4E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		832976992B7B940E009F4E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8FA3D1852B7BA3AC009FB214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FA3D18A2B7BA3AE009FB214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FA3D18D2B7BA3AE009FB214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FA3D18F2B7BA3AE009FB214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		832976852B7B940D009F4E0A /* Frameworks */ = {
+		8FA3D17B2B7BA3AC009FB214 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,31 +35,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8329767F2B7B940D009F4E0A = {
+		8FA3D1752B7BA3AC009FB214 = {
 			isa = PBXGroup;
 			children = (
-				8329768A2B7B940D009F4E0A /* Or-rock-Nari-lock */,
-				832976892B7B940D009F4E0A /* Products */,
+				8FA3D1802B7BA3AC009FB214 /* Or-rock-Nari-lock */,
+				8FA3D17F2B7BA3AC009FB214 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		832976892B7B940D009F4E0A /* Products */ = {
+		8FA3D17F2B7BA3AC009FB214 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				832976882B7B940D009F4E0A /* Or-rock-Nari-lock.app */,
+				8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8329768A2B7B940D009F4E0A /* Or-rock-Nari-lock */ = {
+		8FA3D1802B7BA3AC009FB214 /* Or-rock-Nari-lock */ = {
 			isa = PBXGroup;
 			children = (
-				8329768B2B7B940D009F4E0A /* AppDelegate.swift */,
-				8329768D2B7B940D009F4E0A /* SceneDelegate.swift */,
-				8329768F2B7B940D009F4E0A /* ViewController.swift */,
-				832976942B7B940E009F4E0A /* Assets.xcassets */,
-				832976962B7B940E009F4E0A /* LaunchScreen.storyboard */,
-				832976992B7B940E009F4E0A /* Info.plist */,
+				8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */,
+				8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */,
+				8FA3D1852B7BA3AC009FB214 /* ViewController.swift */,
+				8FA3D18A2B7BA3AE009FB214 /* Assets.xcassets */,
+				8FA3D18C2B7BA3AE009FB214 /* LaunchScreen.storyboard */,
+				8FA3D18F2B7BA3AE009FB214 /* Info.plist */,
 			);
 			path = "Or-rock-Nari-lock";
 			sourceTree = "<group>";
@@ -67,13 +67,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		832976872B7B940D009F4E0A /* Or-rock-Nari-lock */ = {
+		8FA3D17D2B7BA3AC009FB214 /* Or-rock-Nari-lock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8329769C2B7B940E009F4E0A /* Build configuration list for PBXNativeTarget "Or-rock-Nari-lock" */;
+			buildConfigurationList = 8FA3D1922B7BA3AE009FB214 /* Build configuration list for PBXNativeTarget "Or-rock-Nari-lock" */;
 			buildPhases = (
-				832976842B7B940D009F4E0A /* Sources */,
-				832976852B7B940D009F4E0A /* Frameworks */,
-				832976862B7B940D009F4E0A /* Resources */,
+				8FA3D17A2B7BA3AC009FB214 /* Sources */,
+				8FA3D17B2B7BA3AC009FB214 /* Frameworks */,
+				8FA3D17C2B7BA3AC009FB214 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -81,25 +81,25 @@
 			);
 			name = "Or-rock-Nari-lock";
 			productName = "Or-rock-Nari-lock";
-			productReference = 832976882B7B940D009F4E0A /* Or-rock-Nari-lock.app */;
+			productReference = 8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		832976802B7B940D009F4E0A /* Project object */ = {
+		8FA3D1762B7BA3AC009FB214 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					832976872B7B940D009F4E0A = {
-						CreatedOnToolsVersion = 15.0.1;
+					8FA3D17D2B7BA3AC009FB214 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 832976832B7B940D009F4E0A /* Build configuration list for PBXProject "Or-rock-Nari-lock" */;
+			buildConfigurationList = 8FA3D1792B7BA3AC009FB214 /* Build configuration list for PBXProject "Or-rock-Nari-lock" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -107,46 +107,46 @@
 				en,
 				Base,
 			);
-			mainGroup = 8329767F2B7B940D009F4E0A;
-			productRefGroup = 832976892B7B940D009F4E0A /* Products */;
+			mainGroup = 8FA3D1752B7BA3AC009FB214;
+			productRefGroup = 8FA3D17F2B7BA3AC009FB214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				832976872B7B940D009F4E0A /* Or-rock-Nari-lock */,
+				8FA3D17D2B7BA3AC009FB214 /* Or-rock-Nari-lock */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		832976862B7B940D009F4E0A /* Resources */ = {
+		8FA3D17C2B7BA3AC009FB214 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				832976982B7B940E009F4E0A /* LaunchScreen.storyboard in Resources */,
-				832976952B7B940E009F4E0A /* Assets.xcassets in Resources */,
+				8FA3D18E2B7BA3AE009FB214 /* LaunchScreen.storyboard in Resources */,
+				8FA3D18B2B7BA3AE009FB214 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		832976842B7B940D009F4E0A /* Sources */ = {
+		8FA3D17A2B7BA3AC009FB214 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				832976902B7B940D009F4E0A /* ViewController.swift in Sources */,
-				8329768C2B7B940D009F4E0A /* AppDelegate.swift in Sources */,
-				8329768E2B7B940D009F4E0A /* SceneDelegate.swift in Sources */,
+				8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */,
+				8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */,
+				8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		832976962B7B940E009F4E0A /* LaunchScreen.storyboard */ = {
+		8FA3D18C2B7BA3AE009FB214 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				832976972B7B940E009F4E0A /* Base */,
+				8FA3D18D2B7BA3AE009FB214 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8329769A2B7B940E009F4E0A /* Debug */ = {
+		8FA3D1902B7BA3AE009FB214 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +206,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -217,7 +217,7 @@
 			};
 			name = Debug;
 		};
-		8329769B2B7B940E009F4E0A /* Release */ = {
+		8FA3D1912B7BA3AE009FB214 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -273,14 +273,13 @@
 			};
 			name = Release;
 		};
-		8329769D2B7B940E009F4E0A /* Debug */ = {
+		8FA3D1932B7BA3AE009FB214 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7AA7Y5KM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Or-rock-Nari-lock/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -293,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "App-in-App-le.Or-rock-Nari-lock";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-jea0716.Or-rock-Nari-lock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -301,14 +300,13 @@
 			};
 			name = Debug;
 		};
-		8329769E2B7B940E009F4E0A /* Release */ = {
+		8FA3D1942B7BA3AE009FB214 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7AA7Y5KM6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Or-rock-Nari-lock/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -321,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "App-in-App-le.Or-rock-Nari-lock";
+				PRODUCT_BUNDLE_IDENTIFIER = "https---github.com-jea0716.Or-rock-Nari-lock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,25 +330,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		832976832B7B940D009F4E0A /* Build configuration list for PBXProject "Or-rock-Nari-lock" */ = {
+		8FA3D1792B7BA3AC009FB214 /* Build configuration list for PBXProject "Or-rock-Nari-lock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8329769A2B7B940E009F4E0A /* Debug */,
-				8329769B2B7B940E009F4E0A /* Release */,
+				8FA3D1902B7BA3AE009FB214 /* Debug */,
+				8FA3D1912B7BA3AE009FB214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8329769C2B7B940E009F4E0A /* Build configuration list for PBXNativeTarget "Or-rock-Nari-lock" */ = {
+		8FA3D1922B7BA3AE009FB214 /* Build configuration list for PBXNativeTarget "Or-rock-Nari-lock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8329769D2B7B940E009F4E0A /* Debug */,
-				8329769E2B7B940E009F4E0A /* Release */,
+				8FA3D1932B7BA3AE009FB214 /* Debug */,
+				8FA3D1942B7BA3AE009FB214 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 832976802B7B940D009F4E0A /* Project object */;
+	rootObject = 8FA3D1762B7BA3AC009FB214 /* Project object */;
 }
