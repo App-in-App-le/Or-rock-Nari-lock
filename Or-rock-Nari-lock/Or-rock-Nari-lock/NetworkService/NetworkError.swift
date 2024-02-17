@@ -8,18 +8,20 @@
 import Foundation
 
 enum NetworkError: Error {
-    case apiFail
-    case urlRequestError
-    case serverError
+    case error(statusCode: Int, data: Data?)
+    case notConnected
+    case cancelled
+    case generic(Error)
+    case urlGeneration
+    case componentsError
 
-    var description: String {
+    var isNotFoundError: Bool { return hasStatusCode(404) }
+
+    func hasStatusCode(_ codeError: Int) -> Bool {
         switch self {
-        case .apiFail:
-            return "API호출에 실패했습니다."
-        case .urlRequestError:
-            return "잘못된 URLRequest입니다."
-        case .serverError:
-            return "서버가 응답하지 않습니다."
+        case let .error(code, _):
+            return code == codeError
+        default: return false
         }
     }
 }
