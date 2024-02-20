@@ -8,10 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // Test
+    // private let backgroundQueue: DataTransferDispatchQueue = DispatchQueue.global(qos: .userInitiated)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        /* Test Code
+        let dataTransfer: DataTransfer = APIDataTransfer()
+        let endPoint: EndPoint<StockDTO> = EndPoint<StockDTO>(path: "/uapi/domestic-stock/v1/quotations/inquire-price", method: .GET)
+        dataTransfer.request(with: endPoint, on: backgroundQueue) { result in
+            switch result {
+            case .success(let responseDTO):
+                print(responseDTO)
+            case .failure(let error):
+                print(error)
+            }
+        }
+         */
     }
 
 
