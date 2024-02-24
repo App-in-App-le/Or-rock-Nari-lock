@@ -19,6 +19,10 @@
 		832976C82B809D0E009F4E0A /* DataTransferDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976C72B809D0E009F4E0A /* DataTransferDispatchQueue.swift */; };
 		832976CA2B80A8F8009F4E0A /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976C92B80A8F8009F4E0A /* ResponseDecoder.swift */; };
 		832976CD2B80C75B009F4E0A /* StockDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976CC2B80C75B009F4E0A /* StockDTO.swift */; };
+		832976F42B8638A1009F4E0A /* InterestStocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976F32B8638A1009F4E0A /* InterestStocksViewController.swift */; };
+		832976FD2B89F6F0009F4E0A /* StockInformationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976FC2B89F6F0009F4E0A /* StockInformationCollectionViewCell.swift */; };
+		832977022B8A15F9009F4E0A /* StockInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977012B8A15F9009F4E0A /* StockInformation.swift */; };
+		832977052B8A4691009F4E0A /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977042B8A4691009F4E0A /* UIView+.swift */; };
 		8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */; };
 		8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */; };
 		8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1852B7BA3AC009FB214 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 		832976C72B809D0E009F4E0A /* DataTransferDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferDispatchQueue.swift; sourceTree = "<group>"; };
 		832976C92B80A8F8009F4E0A /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
 		832976CC2B80C75B009F4E0A /* StockDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDTO.swift; sourceTree = "<group>"; };
+		832976F32B8638A1009F4E0A /* InterestStocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestStocksViewController.swift; sourceTree = "<group>"; };
+		832976FC2B89F6F0009F4E0A /* StockInformationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInformationCollectionViewCell.swift; sourceTree = "<group>"; };
+		832977012B8A15F9009F4E0A /* StockInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInformation.swift; sourceTree = "<group>"; };
+		832977042B8A4691009F4E0A /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,55 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		832976CE2B84FFCC009F4E0A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				832976CF2B84FFD9009F4E0A /* InterestStocksScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		832976CF2B84FFD9009F4E0A /* InterestStocksScene */ = {
+			isa = PBXGroup;
+			children = (
+				832976F22B86388B009F4E0A /* View */,
+			);
+			path = InterestStocksScene;
+			sourceTree = "<group>";
+		};
+		832976F22B86388B009F4E0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				832976F32B8638A1009F4E0A /* InterestStocksViewController.swift */,
+				832976FC2B89F6F0009F4E0A /* StockInformationCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		832976FF2B8A15DA009F4E0A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				832977002B8A15E1009F4E0A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		832977002B8A15E1009F4E0A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				832977012B8A15F9009F4E0A /* StockInformation.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		832977032B8A4683009F4E0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				832977042B8A4691009F4E0A /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8FA3D1752B7BA3AC009FB214 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +170,9 @@
 		8FA3D1802B7BA3AC009FB214 /* Or-rock-Nari-lock */ = {
 			isa = PBXGroup;
 			children = (
+				832977032B8A4683009F4E0A /* Extensions */,
+				832976FF2B8A15DA009F4E0A /* Domain */,
+				832976CE2B84FFCC009F4E0A /* Presentation */,
 				8329769F2B7DD8F6009F4E0A /* NetworkService */,
 				8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */,
 				8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */,
@@ -197,15 +257,19 @@
 				832976BC2B7E670C009F4E0A /* ResponseRequestable.swift in Sources */,
 				8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */,
 				832976C42B7FB225009F4E0A /* DataTransfer.swift in Sources */,
+				832977022B8A15F9009F4E0A /* StockInformation.swift in Sources */,
 				832976BE2B7E69B6009F4E0A /* EndPoint.swift in Sources */,
 				832976A12B7DD92B009F4E0A /* NetworkError.swift in Sources */,
+				832976F42B8638A1009F4E0A /* InterestStocksViewController.swift in Sources */,
 				832976C02B7E6AE6009F4E0A /* Provider.swift in Sources */,
 				8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */,
+				832976FD2B89F6F0009F4E0A /* StockInformationCollectionViewCell.swift in Sources */,
 				832976CA2B80A8F8009F4E0A /* ResponseDecoder.swift in Sources */,
 				832976C62B809912009F4E0A /* DataTransferError.swift in Sources */,
 				832976CD2B80C75B009F4E0A /* StockDTO.swift in Sources */,
 				832976BA2B7E60DD009F4E0A /* Requestable.swift in Sources */,
 				832976C22B7F17DD009F4E0A /* NetworkSessionManager.swift in Sources */,
+				832977052B8A4691009F4E0A /* UIView+.swift in Sources */,
 				832976B72B7E60A6009F4E0A /* HTTPMethod.swift in Sources */,
 				832976C82B809D0E009F4E0A /* DataTransferDispatchQueue.swift in Sources */,
 				8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */,
