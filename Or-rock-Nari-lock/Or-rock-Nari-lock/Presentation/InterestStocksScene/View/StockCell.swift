@@ -79,6 +79,10 @@ final class StockCell: UICollectionViewCell {
         self.addSubview(stockSubTitleLabel)
         self.addSubview(priceLabel)
         self.addSubview(changeLabel)
+        setConstraints()
+    }
+
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             stockTitleLabel.topAnchor.constraint(equalTo: self.topAnchor),
             stockTitleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 40),
