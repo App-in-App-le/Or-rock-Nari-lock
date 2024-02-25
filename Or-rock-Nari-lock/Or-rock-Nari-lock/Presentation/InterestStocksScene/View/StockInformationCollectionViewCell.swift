@@ -12,14 +12,12 @@ final class StockInformationCollectionViewCell: UICollectionViewCell {
         let label: UILabel = UILabel()
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.text = "애플"
         return label
     }()
 
     private let stockSubTitleLabel: UILabel = {
         let label: UILabel = UILabel()
         label.textColor = .systemGray
-        label.text = "애플 주식"
         return label
     }()
 
@@ -27,13 +25,11 @@ final class StockInformationCollectionViewCell: UICollectionViewCell {
         let label: UILabel = UILabel()
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "100"
         return label
     }()
 
     private let changeLabel: UILabel = {
         let label: UILabel = UILabel()
-        label.text = "10"
         return label
     }()
 
@@ -51,25 +47,26 @@ final class StockInformationCollectionViewCell: UICollectionViewCell {
         stockTitleLabel.text = stockInformation.name
         stockSubTitleLabel.text = stockInformation.engName
         priceLabel.text = String(stockInformation.price)
-        setChangeLabel(stockInformation.previousDayVarianceSign)
+        setChangeLabel(stockInformation.previousDayVarianceSign, with: stockInformation.changePrice)
     }
 
-    private func setChangeLabel(_ previousDayVarianceSign: PreviousDayVarianceSign) {
+    private func setChangeLabel(_ previousDayVarianceSign: PreviousDayVarianceSign, with changePrice: Int) {
         switch previousDayVarianceSign {
         case .upperLimit:
             changeLabel.textColor = .green
-            changeLabel.text = "+\(changeLabel.text ?? "")"
+            changeLabel.text = "+\(changePrice)"
         case .increase:
             changeLabel.textColor = .blue
-            changeLabel.text = "+\(changeLabel.text ?? "")"
+            changeLabel.text = "+\(changePrice)"
         case .noChange:
             changeLabel.textColor = .black
+            changeLabel.text = "\(changePrice)"
         case .lowerLimit:
             changeLabel.textColor = .yellow
-            changeLabel.text = "-\(changeLabel.text ?? "")"
+            changeLabel.text = "-\(changePrice)"
         case .decrease:
             changeLabel.textColor = .red
-            changeLabel.text = "-\(changeLabel.text ?? "")"
+            changeLabel.text = "-\(changePrice)"
         }
     }
 
