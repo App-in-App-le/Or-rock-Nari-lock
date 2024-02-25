@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class StockInformationCollectionViewCell: UICollectionViewCell {
+final class StockCell: UICollectionViewCell {
     private let stockTitleLabel: UILabel = {
         let label: UILabel = UILabel()
         label.textColor = .black

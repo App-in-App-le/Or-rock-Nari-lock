@@ -12,12 +12,12 @@ final class InterestStocksViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         let config = UICollectionLayoutListConfiguration(appearance: .plain)
         let collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewCompositionalLayout.list(using: config))
-        collectionView.register(StockInformationCollectionViewCell.self, forCellWithReuseIdentifier: StockInformationCollectionViewCell.identifier)
+        collectionView.register(StockCell.self, forCellWithReuseIdentifier: StockCell.identifier)
         return collectionView
     }()
 
     private lazy var dataSource =  UICollectionViewDiffableDataSource<UUID, StockInformation>(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StockInformationCollectionViewCell.identifier, for: indexPath) as? StockInformationCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StockCell.identifier, for: indexPath) as? StockCell else { return UICollectionViewCell() }
         cell.setContent(itemIdentifier)
         return cell
     }
