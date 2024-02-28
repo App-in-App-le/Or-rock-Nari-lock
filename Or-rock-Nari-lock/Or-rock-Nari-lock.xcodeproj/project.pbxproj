@@ -29,6 +29,7 @@
 		832977182B8F75EA009F4E0A /* InterestStocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977172B8F75EA009F4E0A /* InterestStocksRepository.swift */; };
 		832977202B8F806F009F4E0A /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329771F2B8F806F009F4E0A /* UserDefaultsProtocol.swift */; };
 		832977222B8F8090009F4E0A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977212B8F8090009F4E0A /* UserDefaultsManager.swift */; };
+		832977242B8F8710009F4E0A /* MockUserDefaultsStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977232B8F8710009F4E0A /* MockUserDefaultsStandard.swift */; };
 		8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */; };
 		8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */; };
 		8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1852B7BA3AC009FB214 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		832977172B8F75EA009F4E0A /* InterestStocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestStocksRepository.swift; sourceTree = "<group>"; };
 		8329771F2B8F806F009F4E0A /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
 		832977212B8F8090009F4E0A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		832977232B8F8710009F4E0A /* MockUserDefaultsStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsStandard.swift; sourceTree = "<group>"; };
 		8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				8329771E2B8F8062009F4E0A /* Protocol */,
 				832977212B8F8090009F4E0A /* UserDefaultsManager.swift */,
+				832977232B8F8710009F4E0A /* MockUserDefaultsStandard.swift */,
 			);
 			path = UserDefaultsManager;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				832976A12B7DD92B009F4E0A /* NetworkError.swift in Sources */,
 				832976F42B8638A1009F4E0A /* InterestStocksViewController.swift in Sources */,
 				832976C02B7E6AE6009F4E0A /* Provider.swift in Sources */,
+				832977242B8F8710009F4E0A /* MockUserDefaultsStandard.swift in Sources */,
 				8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */,
 				8329770C2B8F0EFF009F4E0A /* InterestStocksViewModel.swift in Sources */,
 				832977222B8F8090009F4E0A /* UserDefaultsManager.swift in Sources */,
