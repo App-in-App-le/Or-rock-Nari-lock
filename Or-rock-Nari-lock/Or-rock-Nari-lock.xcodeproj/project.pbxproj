@@ -27,6 +27,8 @@
 		832977102B8F2F78009F4E0A /* LoadInterestStocksUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329770F2B8F2F78009F4E0A /* LoadInterestStocksUseCase.swift */; };
 		832977142B8F3515009F4E0A /* InterestStocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977132B8F3515009F4E0A /* InterestStocksRepository.swift */; };
 		832977182B8F75EA009F4E0A /* InterestStocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977172B8F75EA009F4E0A /* InterestStocksRepository.swift */; };
+		832977202B8F806F009F4E0A /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329771F2B8F806F009F4E0A /* UserDefaultsProtocol.swift */; };
+		832977222B8F8090009F4E0A /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832977212B8F8090009F4E0A /* UserDefaultsManager.swift */; };
 		8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */; };
 		8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */; };
 		8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1852B7BA3AC009FB214 /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		8329770F2B8F2F78009F4E0A /* LoadInterestStocksUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadInterestStocksUseCase.swift; sourceTree = "<group>"; };
 		832977132B8F3515009F4E0A /* InterestStocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestStocksRepository.swift; sourceTree = "<group>"; };
 		832977172B8F75EA009F4E0A /* InterestStocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestStocksRepository.swift; sourceTree = "<group>"; };
+		8329771F2B8F806F009F4E0A /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		832977212B8F8090009F4E0A /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +227,23 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		8329771D2B8F8054009F4E0A /* UserDefaultsManager */ = {
+			isa = PBXGroup;
+			children = (
+				8329771E2B8F8062009F4E0A /* Protocol */,
+				832977212B8F8090009F4E0A /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaultsManager;
+			sourceTree = "<group>";
+		};
+		8329771E2B8F8062009F4E0A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8329771F2B8F806F009F4E0A /* UserDefaultsProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		8FA3D1752B7BA3AC009FB214 = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +265,7 @@
 		8FA3D1802B7BA3AC009FB214 /* Or-rock-Nari-lock */ = {
 			isa = PBXGroup;
 			children = (
+				8329771D2B8F8054009F4E0A /* UserDefaultsManager */,
 				832977152B8F74E9009F4E0A /* Data */,
 				832977032B8A4683009F4E0A /* Extensions */,
 				832976FF2B8A15DA009F4E0A /* Domain */,
@@ -393,6 +415,7 @@
 				832976C02B7E6AE6009F4E0A /* Provider.swift in Sources */,
 				8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */,
 				8329770C2B8F0EFF009F4E0A /* InterestStocksViewModel.swift in Sources */,
+				832977222B8F8090009F4E0A /* UserDefaultsManager.swift in Sources */,
 				832977142B8F3515009F4E0A /* InterestStocksRepository.swift in Sources */,
 				832976FD2B89F6F0009F4E0A /* StockCell.swift in Sources */,
 				832976CA2B80A8F8009F4E0A /* ResponseDecoder.swift in Sources */,
@@ -404,6 +427,7 @@
 				832977052B8A4691009F4E0A /* UIView+.swift in Sources */,
 				832976B72B7E60A6009F4E0A /* HTTPMethod.swift in Sources */,
 				832976C82B809D0E009F4E0A /* DataTransferDispatchQueue.swift in Sources */,
+				832977202B8F806F009F4E0A /* UserDefaultsProtocol.swift in Sources */,
 				8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
