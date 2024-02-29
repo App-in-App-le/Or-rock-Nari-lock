@@ -8,11 +8,17 @@
 import Foundation
 
 final class DefaultInterestStocksRepository: InterestStocksRepository {
+    private let userDefaultmanager: UserDefaultsManager
+
+    // 실 사용시 Mock 제거
+    init(userDefaultmanager: UserDefaultsManager = UserDefaultsManager(userDefaults: MockUserDefaultsStandard())) {
+        self.userDefaultmanager = userDefaultmanager
+    }
 
 }
 
 extension DefaultInterestStocksRepository {
-    func loadInterestStockList() {
-        <#code#>
+    func loadInterestStockList() -> [String] {
+        userDefaultmanager.load()
     }
 }

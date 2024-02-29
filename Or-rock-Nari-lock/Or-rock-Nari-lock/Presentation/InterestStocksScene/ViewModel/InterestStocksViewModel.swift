@@ -6,15 +6,38 @@
 //
 
 import Foundation
+import RxSwift
 
-protocol InterestStocksViewModelInput {
-    
+final class InterestStocksViewModel {
+    private let loadInterestStocksUseCase: LoadInterestStocksUseCase
+
+    struct Input {
+        let viewDidLoadEvent: Observable<Void>
+    }
+
+    struct Output {
+        let stockNames: [String]
+    }
+
+    init(loadInterestStocksUseCase: LoadInterestStocksUseCase = DefaultLoadInterestStocksUseCase()) {
+        self.loadInterestStocksUseCase = loadInterestStocksUseCase
+    }
+
+    func transform(from input: Input, disposeBag: DisposeBag) -> Output {
+        let output = createViewModelOutput()
+        input.viewDidLoadEvent.subscribe(
+            onNext: { [weak self] _ in
+                guard let self = self else { return }
+            }
+        )
+        .disposed(by: disposeBag)
+        return output
+    }
 }
 
-protocol InterestStocksViewModelOutput {
-
+private extension InterestStocksViewModel {
+    func createViewModelOutput() -> Output {
+        let names: [String] = loadInterestStocksUseCase.execute()
+        return Output(stockNames: names)
+    }
 }
-
-typealias InterestStocksViewModel = InterestStocksViewModelInput & InterestStocksViewModelOutput
-
-
