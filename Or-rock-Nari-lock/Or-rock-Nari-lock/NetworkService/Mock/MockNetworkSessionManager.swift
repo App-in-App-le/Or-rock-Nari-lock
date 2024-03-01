@@ -32,6 +32,12 @@ final class MockNetworkSessionManager: NetworkSessionManager {
             completion(nil, response, NSError(domain: "MockNetworkSessionManager", code: 404))
         }
         completion(data, response, error)
-        return URLSessionDataTask()
+        return MockURLSessionDataTask()
+    }
+}
+
+final class MockURLSessionDataTask: NetworkCancellable {
+    func cancel() {
+        print("DataTask cancelled")
     }
 }

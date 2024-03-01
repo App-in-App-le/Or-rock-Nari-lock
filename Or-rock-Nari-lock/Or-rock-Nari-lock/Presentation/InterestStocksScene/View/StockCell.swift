@@ -34,9 +34,6 @@ final class StockCell: UICollectionViewCell {
         return label
     }()
 
-    private var viewModel: StockCellViewModel?
-    private let disposeBag: DisposeBag = DisposeBag()
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUI()
@@ -47,25 +44,8 @@ final class StockCell: UICollectionViewCell {
         setUI()
     }
 
-    func setContent(_ stockName: String) {
-        stockTitleLabel.text = stockName
-    }
-
-    private func bind() {
-        guard let viewModel = viewModel else { return }
-
-        let input = StockCellViewModel.Input(cellSetContent: <#T##Observable<String>#>)
-        let output = viewModel.transform(from: input)
-        output.stockInformation
-            .subscribe { [weak self] stockInformation in
-                if let stockInformation = stockInformation {
-                    self?.setStockInformation(stockInformation)
-                }
-            }
-            .disposed(by: disposeBag)
-    }
-
-    private func setStockInformation(_ stockInformation: StockInformation) {
+    func setContent(_ stockInformation: StockInformation) {
+        stockTitleLabel.text = stockInformation.name
         stockSubTitleLabel.text = stockInformation.engName
         priceLabel.text = String(stockInformation.price)
         setChangeLabel(stockInformation.previousDayVarianceSign, with: stockInformation.changePrice)
