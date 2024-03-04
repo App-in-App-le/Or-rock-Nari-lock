@@ -19,6 +19,14 @@
 		832976C82B809D0E009F4E0A /* DataTransferDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976C72B809D0E009F4E0A /* DataTransferDispatchQueue.swift */; };
 		832976CA2B80A8F8009F4E0A /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976C92B80A8F8009F4E0A /* ResponseDecoder.swift */; };
 		832976CD2B80C75B009F4E0A /* StockDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832976CC2B80C75B009F4E0A /* StockDTO.swift */; };
+		8F267DA42B8DB7F500269528 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8F267DA32B8DB7F500269528 /* DGCharts */; };
+		8F267DA62B8DB7F500269528 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8F267DA52B8DB7F500269528 /* DGChartsDynamic */; };
+		8F267DA82B8DB80E00269528 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DA72B8DB80E00269528 /* StockDetailViewController.swift */; };
+		8F267DAC2B9079B200269528 /* StockChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DAB2B9079B200269528 /* StockChartView.swift */; };
+		8F267DAE2B9079C000269528 /* StockChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DAD2B9079C000269528 /* StockChartViewModel.swift */; };
+		8F267DB32B91A98E00269528 /* ChartDatasetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DB02B91A98E00269528 /* ChartDatasetFactory.swift */; };
+		8F267DB42B91A98E00269528 /* ChartDatasetVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DB12B91A98E00269528 /* ChartDatasetVM.swift */; };
+		8F267DB52B91A98E00269528 /* DataColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F267DB22B91A98E00269528 /* DataColor.swift */; };
 		8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */; };
 		8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */; };
 		8FA3D1862B7BA3AC009FB214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D1852B7BA3AC009FB214 /* ViewController.swift */; };
@@ -39,6 +47,12 @@
 		832976C72B809D0E009F4E0A /* DataTransferDispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferDispatchQueue.swift; sourceTree = "<group>"; };
 		832976C92B80A8F8009F4E0A /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
 		832976CC2B80C75B009F4E0A /* StockDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDTO.swift; sourceTree = "<group>"; };
+		8F267DA72B8DB80E00269528 /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		8F267DAB2B9079B200269528 /* StockChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockChartView.swift; sourceTree = "<group>"; };
+		8F267DAD2B9079C000269528 /* StockChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockChartViewModel.swift; sourceTree = "<group>"; };
+		8F267DB02B91A98E00269528 /* ChartDatasetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasetFactory.swift; sourceTree = "<group>"; };
+		8F267DB12B91A98E00269528 /* ChartDatasetVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDatasetVM.swift; sourceTree = "<group>"; };
+		8F267DB22B91A98E00269528 /* DataColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataColor.swift; sourceTree = "<group>"; };
 		8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Or-rock-Nari-lock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F267DA62B8DB7F500269528 /* DGChartsDynamic in Frameworks */,
+				8F267DA42B8DB7F500269528 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +110,35 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
+		8F267DAF2B91A98E00269528 /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				8F267DB02B91A98E00269528 /* ChartDatasetFactory.swift */,
+				8F267DB12B91A98E00269528 /* ChartDatasetVM.swift */,
+				8F267DB22B91A98E00269528 /* DataColor.swift */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+		8F267DB62B95861300269528 /* ChartDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8F267DB72B95862200269528 /* ChartGraph */,
+				8F267DA72B8DB80E00269528 /* StockDetailViewController.swift */,
+			);
+			path = ChartDetail;
+			sourceTree = "<group>";
+		};
+		8F267DB72B95862200269528 /* ChartGraph */ = {
+			isa = PBXGroup;
+			children = (
+				8F267DAF2B91A98E00269528 /* Dataset */,
+				8F267DAB2B9079B200269528 /* StockChartView.swift */,
+				8F267DAD2B9079C000269528 /* StockChartViewModel.swift */,
+			);
+			path = ChartGraph;
+			sourceTree = "<group>";
+		};
 		8FA3D1752B7BA3AC009FB214 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +158,7 @@
 		8FA3D1802B7BA3AC009FB214 /* Or-rock-Nari-lock */ = {
 			isa = PBXGroup;
 			children = (
+				8F267DB62B95861300269528 /* ChartDetail */,
 				8329769F2B7DD8F6009F4E0A /* NetworkService */,
 				8FA3D1812B7BA3AC009FB214 /* AppDelegate.swift */,
 				8FA3D1832B7BA3AC009FB214 /* SceneDelegate.swift */,
@@ -140,6 +186,10 @@
 			dependencies = (
 			);
 			name = "Or-rock-Nari-lock";
+			packageProductDependencies = (
+				8F267DA32B8DB7F500269528 /* DGCharts */,
+				8F267DA52B8DB7F500269528 /* DGChartsDynamic */,
+			);
 			productName = "Or-rock-Nari-lock";
 			productReference = 8FA3D17E2B7BA3AC009FB214 /* Or-rock-Nari-lock.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +218,9 @@
 				Base,
 			);
 			mainGroup = 8FA3D1752B7BA3AC009FB214;
+			packageReferences = (
+				8F267DA22B8DB7F500269528 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 8FA3D17F2B7BA3AC009FB214 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,15 +252,21 @@
 				832976C42B7FB225009F4E0A /* DataTransfer.swift in Sources */,
 				832976BE2B7E69B6009F4E0A /* EndPoint.swift in Sources */,
 				832976A12B7DD92B009F4E0A /* NetworkError.swift in Sources */,
+				8F267DB32B91A98E00269528 /* ChartDatasetFactory.swift in Sources */,
 				832976C02B7E6AE6009F4E0A /* Provider.swift in Sources */,
+				8F267DAC2B9079B200269528 /* StockChartView.swift in Sources */,
 				8FA3D1822B7BA3AC009FB214 /* AppDelegate.swift in Sources */,
 				832976CA2B80A8F8009F4E0A /* ResponseDecoder.swift in Sources */,
+				8F267DB42B91A98E00269528 /* ChartDatasetVM.swift in Sources */,
 				832976C62B809912009F4E0A /* DataTransferError.swift in Sources */,
+				8F267DAE2B9079C000269528 /* StockChartViewModel.swift in Sources */,
+				8F267DB52B91A98E00269528 /* DataColor.swift in Sources */,
 				832976CD2B80C75B009F4E0A /* StockDTO.swift in Sources */,
 				832976BA2B7E60DD009F4E0A /* Requestable.swift in Sources */,
 				832976C22B7F17DD009F4E0A /* NetworkSessionManager.swift in Sources */,
 				832976B72B7E60A6009F4E0A /* HTTPMethod.swift in Sources */,
 				832976C82B809D0E009F4E0A /* DataTransferDispatchQueue.swift in Sources */,
+				8F267DA82B8DB80E00269528 /* StockDetailViewController.swift in Sources */,
 				8FA3D1842B7BA3AC009FB214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +490,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F267DA22B8DB7F500269528 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F267DA32B8DB7F500269528 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F267DA22B8DB7F500269528 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		8F267DA52B8DB7F500269528 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F267DA22B8DB7F500269528 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FA3D1762B7BA3AC009FB214 /* Project object */;
 }
